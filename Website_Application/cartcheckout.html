@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cartcheckout.css">
+    <title>Checkout</title>
+</head>
+
+<body>
+    <header>
+        <div class="headTop">
+            <div class="headerBox">
+                <p><a href="">100+ NEW MARKDOWNS ADDED! UP TO 50% OFF ALL SALES! SHOP NOW</a></p>
+            </div>
+        </div>
+        <div class="headMid">
+            <div class="midLeft"></div>
+            <div class="midMid">
+                <div class="logo">
+                    <img src="img/logo.png" alt="vineyard logo">
+                </div>
+            </div>
+            <div class="midRight">
+        
+            </div>
+        </div>
+        <div class="container1">
+            <div class="topnav">
+                <a href="">NEW</a>
+                <a href="">MEN</a>
+                <a href="">WOMEN</a>
+                <a href="">BOYS</a>
+                <a href="">GIRLS</a>
+                <a href="">MORE SIZES</a>
+                <a href="">TIES</a>
+                <a href="">MORE</a>
+                <input type="text" name="" id=""> <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="cartPage">
+        <div class="cartBasket" id="cartBasket">
+            <div class="cartTop">
+                <div>Item</div>
+                <div>Item Description</div>
+                <div>Quantity</div>
+                <div>Unit Price</div>
+                <div>Total Price</div>
+                <div>Del</div>
+            </div>
+            <div class="cartBasket1" id="justDel">
+                <div class="del"><img src="img/pink1.jpg" alt="" id="checkoutImage"></div>
+                <div class="del" id="detailDiv">
+                    <p id="itemDescription">St. John Stripe Sankaty Polo</p>
+                    <p>Color: <span id="color"></span></p>
+                    <p>Quantity: <span id="quantity"></span></p>
+                    <p>Size: <span id="size"></span></p>
+                </div>
+                <div class="del" id="volumeDiv">
+                    <input type="number" id="numberField" min="1" max="10.0" step="1.0" value="1">
+                    <input type="button" value="Update" onclick="updateQuantity()">
+                </div>
+                <div class="del" id="priceDiv">$89.50</div>
+                <div class="del"><span id="cartTotal"></span></div>
+                <div><i class="fas fa-trash" onclick="deleteAll()"></i></div>
+            </div>
+        </div>
+
+
+        <div class="cartCheckout">
+            <div class="orderSumup">
+                <p id="orderSumup">Order Summary</p>
+                <p>1 item in total</p>
+            </div>
+            <div class="cost">
+                <p>Subtotal: <span id="subTotal" class="value_right"></span></p>
+                <p>Discount: <span class="value_right" id="discount"></span></p>
+                <p>Total: <span id="totalCost" class="value_right"></span></p>
+
+            </div>
+            <div class="discount1">
+                <input type="text" placeholder="Enter 5 digit coupon" id="coupon" maxlength="5">
+                <input type="button" value="Apply Coupon" onclick="applyDiscount()">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/123c704c20.js" crossorigin="anonymous"></script>
+    <script src="js/jsscript.js"></script>
+    <script src="js/cartcheckout.js"></script>
+</body>
+
+</html>

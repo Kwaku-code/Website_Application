@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Vineyard Vines</title>
+</head>
+<body>
+    <header>
+        <div class="headTop">
+            <div class="headerBox">
+                <p><a href="">100+ NEW MARKDOWNS ADDED! UP TO 50% OFF ALL SALES! SHOP NOW</a></p>
+            </div>
+        </div>
+        <div class="headMid">
+            <div class="midLeft"></div>
+            <div class="midMid">
+                <div class="logo">
+                    <img src="img/logo.png" alt="vineyard logo">
+                </div>
+            </div>
+            <div class="midRight">
+
+            </div>
+        </div>
+        <div class="container1">
+            <div class="topnav">
+                <a href="">NEW</a>
+                <a href="">MEN</a>
+                <a href="">WOMEN</a>
+                <a href="">BOYS</a>
+                <a href="">GIRLS</a>
+                <a href="">MORE SIZES</a>
+                <a href="">TIES</a>
+                <a href="">MORE</a>
+                <input type="text" name="" id=""> <i class="fas fa-search"></i>
+            </div>
+        </div>
+    </header>
+
+    <hr>
+
+    <main>
+        <div class="container1">
+            <div class="image">
+                <img class="mySlides" src="img/pink1.jpg" id="slide1">
+                <img class="mySlides" src="img/pink2.jpg" id="slide2">
+                <img class="mySlides" src="img/pink3.jpg" id="slide3">
+                <img class="mySlides" src="img/pink4.jpg" id="slide4">
+            </div>
+            <div class="details">
+                <div class="features">
+                    <p id="itemName">St. John Stripe Sankaty Polo</p>
+                </div>
+
+                <div class="addDetails">
+                    <div><span>FREE GROUND SHIPPING</span> on all orders $125</div>
+                    <p class="priceTag">$89.50</p>
+                </div>
+                <div class="colorAlt">
+                    <div class="topColor">
+                        <span>Color: <span id="colorName"></span></span>
+                    </div>
+                    <div class="colorChoice">
+                        <div class="colorOval pink" onclick="selectPink()"></div>
+                        <div class="colorOval blue" onclick="selectBlue()"></div>   
+                    </div>
+                </div>
+
+                <div class="size">
+                    <p><span>Size:</span> Size Chart</p>
+                    <div class="sizePicker">
+                        <form>
+                            <select id="sizeOptions">
+                                <option value="XS">XS</option>
+                                <option value="S" selected>S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="cartVolume">
+                    <p>Quantity:</p>
+                    <i class="fas fa-minus-circle" id="minus" onclick="subtract()"></i>
+                    <input type="number" name="" id="quantity" min="1" max="10.0" step="1.0" value="1">
+                    <i class="fas fa-plus-circle" id="plus" onclick="add()"></i>
+                </div>
+                <div class="addToCart">
+                    <div class="add"><input type="button" value="ADD TO BAG" onclick="addToCart()"></div>
+                    <!-- <div class="buy"><input type="button" value="Buy online, free in-store pickup"></div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div id="rightSidepanel" class="sidepanel">
+        <a href="" class="closebtn" onclick="closeNav()">×</a>
+        <div class="topmost">
+            <p>Item added to Cart</p>
+        </div>
+
+        <div class="itemDetails">
+            <div class="smallImage">
+                <img src="" alt="" id="smallImage">
+            </div>
+
+            <div class="imegeDetail">
+                <div class="details">
+                    <p>St. Jean Stripe Sankarty Polo</p>
+                </div>
+                <span>Size: </span><span id="sizePicked"></span><br>
+                <span>Qty: <span id="quantityPicked"></span></span>
+                <div class="additionalInfo">
+                    <p class="price">$89.50</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="subTotal">
+            <span>Subtotal: $<span id="subTotal"></span></span>
+        </div>
+
+        <div class="checkout"><a href="cartcheckout.html">Checkout</a></div>
+
+
+    </div>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/123c704c20.js" crossorigin="anonymous"></script>
+    <script src="js/jsscript.js"></script>
+</body>
+
+</html>
